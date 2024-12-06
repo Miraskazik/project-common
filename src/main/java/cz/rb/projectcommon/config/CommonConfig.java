@@ -2,6 +2,7 @@ package cz.rb.projectcommon.config;
 
 
 import cz.rb.projectcommon.service.MessagingFactory;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +19,10 @@ public class CommonConfig {
 
     @Bean
     public RestTemplate restTemplate() {
-        return new RestTemplate();
+        RestTemplateBuilder restTemplateBuilder = new RestTemplateBuilder();
+        restTemplateBuilder.defaultHeader("Content-Type", "application/json");
+        return restTemplateBuilder.build();
+//        return new RestTemplate();
     }
 
 

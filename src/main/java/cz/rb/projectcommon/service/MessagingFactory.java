@@ -1,6 +1,6 @@
 package cz.rb.projectcommon.service;
 
-import cz.rb.projectcommon.model.DogMessage;
+import cz.rb.projectcommon.model.dog.DogMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;

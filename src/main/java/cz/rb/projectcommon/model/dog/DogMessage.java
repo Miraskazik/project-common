@@ -1,4 +1,4 @@
-package cz.rb.projectcommon.model;
+package cz.rb.projectcommon.model.dog;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
